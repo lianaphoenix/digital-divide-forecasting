@@ -15,17 +15,7 @@ WDI data can also be browsed directly at data.worldbank.org or via the World Ban
 
 Years with fewer than 100 reporting countries, and any year where any single component has thin coverage are automatically dropped before modeling, since sparse reporting years distort the per-year normalization used to build the index.
 
-digital-divide-forecasting/
-├── README.md
-├── digital_divide_forecast.py          # Full pipeline, commented
-├── digital_divide_forecast_nocomments.py  # Same pipeline, no comments
-├── digital_divide_panel.csv            # Cleaned panel dataset (output artifact)
-├── results_table.csv                   # Model comparison results (output artifact)
-├── connectivity_index_2050_projection.csv  # Long-horizon projections (output artifact)
-└── SIDe26_references.bib               # Bibliography for the accompanying paper
-
-**How to run
-**
+How to run?
 No local setup required — this runs entirely in a free hosted notebook.
 
 Open a new notebook at kaggle.com/code or colab.research.google.com.
@@ -38,6 +28,8 @@ Composite index: internet penetration (40%), mobile subscriptions (20%, capped),
 Short-term models: trained on a strict time-based train/validation/test split (not random) to avoid information leakage from future years.
 Significance testing: paired t-test, Wilcoxon signed-rank test, and a 2,000-resample bootstrap confidence interval on the RMSE difference between linear regression and the naive persistence baseline.
 Long-term projection: per-country logistic growth curve f(t) = L / (1 + e^(-k(t - t0))) fit on historical index values, following standard technology-diffusion modeling, with a linear-trend fallback for countries with insufficient data for a stable curve fit.
+
+For projection and results, you may reach me at rakhimzhanovaliana@gmail.com
 
 Citation
 
