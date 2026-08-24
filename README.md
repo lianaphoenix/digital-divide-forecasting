@@ -30,12 +30,3 @@ Significance testing: paired t-test, Wilcoxon signed-rank test, and a 2,000-resa
 Long-term projection: per-country logistic growth curve f(t) = L / (1 + e^(-k(t - t0))) fit on historical index values, following standard technology-diffusion modeling, with a linear-trend fallback for countries with insufficient data for a stable curve fit.
 
 For projection and results, you may reach me at rakhimzhanovaliana@gmail.com
-
-Citation
-
-If you use this pipeline or its results, please cite:
-@inproceedings{rakhimzhanova2026forecasting,
-  author    = {Rakhimzhanova, Liana},
-  title     = {Forecasting the Digital Divide: A Comparative Machine Learning Study of ICT Access Trajectories},
-  booktitle = {Proceedings of SIDe'26: Secure Intelligent Digital Ecosystems},
-  year      = {2026}
