@@ -22,7 +22,8 @@ jobs:
       - name: Compile analysis script
         run: python -m py_compile src/forecasting_digital_divide.py
       - name: Validate notebook JSON
-        run: python - <<'PY'
+        run: |
+          python - <<'PY'
           import json
           from pathlib import Path
           p = Path('notebooks/final_analysis.ipynb')
