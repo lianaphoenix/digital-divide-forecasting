@@ -1,0 +1,4 @@
+country,scenario,calibration,year,index_value
+Kazakhstan,conservative_recent_linear,2018-2024,2049,96.72
+Kazakhstan,baseline_full_history_logistic,full_history,2049,77.35
+Kazakhstan,accelerated_pre_2018_logistic,through_2017,2049,77.70

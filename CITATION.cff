@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Forecasting the Digital Divide: A Comparative Machine Learning Study of ICT Access Trajectories"
+authors:
+  - family-names: Rakhimzhanova
+    given-names: Liana
+type: software
+license: MIT
+version: "1.0.0"
+date-released: 2026-10-06
+repository-code: "https://github.com/REPLACE-WITH-YOUR-USERNAME/Forecasting-Digital-Divide"
+abstract: >-
+  Reproducibility repository for a comparative forecasting study of a composite
+  Connectivity Index constructed from World Bank World Development Indicators.
+keywords:
+  - digital divide
+  - connectivity index
+  - machine learning
+  - time-series forecasting
+  - Kazakhstan
+  - World Development Indicators

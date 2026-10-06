@@ -1,0 +1,33 @@
+name: Reproducibility check
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'src/**'
+      - 'notebooks/**'
+      - 'requirements.txt'
+      - '.github/workflows/reproducibility.yml'
+
+jobs:
+  syntax-and-notebook-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Compile analysis script
+        run: python -m py_compile src/forecasting_digital_divide.py
+      - name: Validate notebook JSON
+        run: python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('notebooks/final_analysis.ipynb')
+          nb = json.loads(p.read_text())
+          assert nb['nbformat'] >= 4
+          assert any(c.get('cell_type') == 'code' for c in nb['cells'])
+          print('Notebook structure OK')
+          PY

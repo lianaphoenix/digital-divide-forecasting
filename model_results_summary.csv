@@ -1,0 +1,7 @@
+Model,RMSE,MAE,Common_Test_N
+Naive persistence,4.582,2.371,537
+Linear Regression,4.300,2.234,537
+Random Forest,4.353,2.468,537
+XGBoost,4.454,2.523,537
+ARIMA,, ,0
+Holt/ETS,, ,0

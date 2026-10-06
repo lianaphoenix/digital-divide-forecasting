@@ -1,0 +1,5 @@
+weight_scenario,correlation_with_baseline,linear_RMSE,linear_MAE,kazakhstan_mean_abs_delta,uzbekistan_mean_abs_delta
+baseline_40_20_20_20,1.0000,4.300,2.234,0.000,0.000
+equal_25_25_25_25,0.9953,5.465,2.782,2.953,2.844
+internet_dominant_50_16_7_16_7_16_7,0.9984,3.791,2.002,1.969,1.896
+infrastructure_balanced_30_15_25_30,0.9936,4.772,2.371,2.390,4.743

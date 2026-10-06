@@ -1,0 +1,15 @@
+name: digital-divide-forecasting
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - requests
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - xgboost
+  - statsmodels
+  - jupyter
+  - nbformat
