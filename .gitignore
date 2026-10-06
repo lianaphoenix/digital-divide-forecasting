@@ -8,10 +8,6 @@ __pycache__/
 
 # Generated analysis outputs
 outputs/generated/
-outputs/*.png
-outputs/*.csv
-outputs/*.xlsx
-outputs/*.json
 
 # Local/raw data downloads
 raw_data/

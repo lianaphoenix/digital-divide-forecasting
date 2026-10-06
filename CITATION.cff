@@ -7,7 +7,7 @@ type: software
 license: MIT
 version: "1.0.0"
 date-released: 2026-10-06
-repository-code: "https://github.com/REPLACE-WITH-YOUR-USERNAME/Forecasting-Digital-Divide"
+repository-code: "https://github.com/lianaphoenix/digital-divide-forecasting"
 abstract: >-
   Reproducibility repository for a comparative forecasting study of a composite
   Connectivity Index constructed from World Bank World Development Indicators.

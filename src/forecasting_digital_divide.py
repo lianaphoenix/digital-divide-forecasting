@@ -616,7 +616,6 @@ for name, weights in WEIGHT_SCENARIOS.items():
     for country in COUNTRIES_TO_PLOT:
         c=d[d.country==country][["year",TARGET]].sort_values("year")
         if c.empty: continue
-        fit=fit_logistic = None
         # full-history logistic for weight sensitivity only
         try:
             yy=c[TARGET].to_numpy(float); tt=c.year.to_numpy(float)
